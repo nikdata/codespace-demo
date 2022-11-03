@@ -1,7 +1,7 @@
 {
 	"name": "RStudio Codepsace",
 	"build": {
-		"dockerfile": "Dockerfile",
+		"dockerfile": "dockerfile",
 		// Update VARIANT to pick a specific R version: 4, 4.1, 4.0
 		// "args": { "VARIANT": "4" }
 	},
