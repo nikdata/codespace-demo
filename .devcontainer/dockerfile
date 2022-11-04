@@ -15,8 +15,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     xdg-utils \
     nano \
     python3-pip \
-    pip install radian && \
-    ln -s /usr/local/lib/R/lib/libR.so /lib/x86_64-linux-gnu/libR.so
+    && python3 -m pip --no-cache-dir install radian \
+    && ln -s /usr/local/lib/R/lib/libR.so /lib/x86_64-linux-gnu/libR.so
 
 # expose the port for RStudio
 EXPOSE 8787
